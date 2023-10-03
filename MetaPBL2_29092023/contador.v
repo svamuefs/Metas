@@ -1,0 +1,31 @@
+module contador (
+    input click ,
+    output [2:0] contagem
+);
+
+    wire [1:0] intermediary_clk;
+
+     t_flipflop t_flipflop_0 (
+		.clk (click) ,
+        .t (1) , 
+        .reset (1) , 
+        .out (intermediary_clk[0]));
+
+    assign contagem[0] = intermediary_clk[0];
+
+    t_flipflop t_flipflop_1 (
+        .clk (intermediary_clk[0]) ,
+        .t (1) , 
+        .reset (1) , 
+        .out (intermediary_clk[1]));
+
+    assign contagem[1] = intermediary_clk[1];
+
+    t_flipflop t_flipflop_2 (
+        .clk (intermediary_clk[1]) ,
+        .t (1) , 
+        .reset (1) , 
+        .out (contagem[2]));
+    
+    
+endmodule

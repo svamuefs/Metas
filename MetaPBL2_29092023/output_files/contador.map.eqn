@@ -1,0 +1,59 @@
+-- Copyright (C) 2023  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+--contagem[0] is contagem[0]
+--operation mode is output
+
+contagem[0] = OUTPUT(B1_out);
+
+
+--contagem[1] is contagem[1]
+--operation mode is output
+
+contagem[1] = OUTPUT(B2_out);
+
+
+--contagem[2] is contagem[2]
+--operation mode is output
+
+contagem[2] = OUTPUT(B3_out);
+
+
+--B1_out is t_flipflop:t_flipflop_0|out
+--operation mode is normal
+
+B1_out_lut_out = (!B1_out);
+B1_out = DFFEAS(B1_out_lut_out, !click, VCC, , , , , , );
+
+
+--B2_out is t_flipflop:t_flipflop_1|out
+--operation mode is normal
+
+B2_out_lut_out = (!B2_out);
+B2_out = DFFEAS(B2_out_lut_out, !B1_out, VCC, , , , , , );
+
+
+--B3_out is t_flipflop:t_flipflop_2|out
+--operation mode is normal
+
+B3_out_lut_out = (!B3_out);
+B3_out = DFFEAS(B3_out_lut_out, !B2_out, VCC, , , , , , );
+
+
+--click is click
+--operation mode is input
+
+click = INPUT();
+
+

@@ -1,0 +1,41 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 't_flipflop:t_flipflop_1|out'
+Slack : -1.193
+TNS   : -1.193
+
+Type  : Setup 't_flipflop:t_flipflop_0|out'
+Slack : 0.854
+TNS   : 0.000
+
+Type  : Setup 'click'
+Slack : 1.893
+TNS   : 0.000
+
+Type  : Hold 'click'
+Slack : -1.947
+TNS   : -1.947
+
+Type  : Hold 't_flipflop:t_flipflop_0|out'
+Slack : -0.908
+TNS   : -0.908
+
+Type  : Hold 't_flipflop:t_flipflop_1|out'
+Slack : 1.639
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'click'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 't_flipflop:t_flipflop_0|out'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 't_flipflop:t_flipflop_1|out'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

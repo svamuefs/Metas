@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/CD/Meta_1/simulation/qsim
+vcontador
+Z1 !s110 1696210262
+!i10b 1
+!s100 cT@T7GZb^B<Vl5XG9`N:Q2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA^EJcm0<E;Ga@Z:NoUYO^2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1696210259
+8contador.vo
+Fcontador.vo
+!i122 2
+L0 32 175
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1696210261.000000
+!s107 contador.vo|
+!s90 -work|work|contador.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcontador_vlg_vec_tst
+R1
+!i10b 1
+!s100 O8kNFX7z;DSXK3OHPl3PA2
+R2
+I96EJgB0I8WcEjUC=oJECo2
+R3
+R0
+w1696210258
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 26
+R4
+r1
+!s85 0
+31
+!s108 1696210262.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

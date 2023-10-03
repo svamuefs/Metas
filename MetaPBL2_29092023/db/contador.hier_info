@@ -1,0 +1,28 @@
+|contador
+click => click.IN1
+contagem[0] <= intermediary_clk[0].DB_MAX_OUTPUT_PORT_TYPE
+contagem[1] <= intermediary_clk[1].DB_MAX_OUTPUT_PORT_TYPE
+contagem[2] <= t_flipflop:t_flipflop_2.out
+
+
+|contador|t_flipflop:t_flipflop_0
+t => out.OUTPUTSELECT
+clk => out~reg0.CLK
+reset => out.OUTPUTSELECT
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador|t_flipflop:t_flipflop_1
+t => out.OUTPUTSELECT
+clk => out~reg0.CLK
+reset => out.OUTPUTSELECT
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador|t_flipflop:t_flipflop_2
+t => out.OUTPUTSELECT
+clk => out~reg0.CLK
+reset => out.OUTPUTSELECT
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
